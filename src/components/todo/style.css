@@ -5,6 +5,7 @@
     border-radius: 12px;
     padding: 12px 24px 24px;
     width: 270px;
+    margin-left: 10px;
 }
 
 .todo-title {
