@@ -4,11 +4,16 @@ import "./style.css"
 
 function Todo({ todo, onRemove, onToggle }) {
     return (
-            <div className='list_item'>
-                <div className='todohead'>제목 :{todo.title}</div> <div className='todobody'>할일 :{todo.text}</div>
-                <button className='btn1' onClick={() => onToggle(todo.id)}>완료하기</button>
-                <button className='btn1' onClick={() => onRemove(todo.id)}>삭제</button>
+        <div className='todo-container'>
+            <div>
+                <h2 className='todotitle'>제목 :{todo.title}</h2> 
+                <div>할일 :{todo.text}</div>
             </div>
+            <div className='mybtn'>
+                <button onClick={() => onToggle(todo.id)}>{todo.isDone === false ? "완료하기" : "취소하기"}</button>
+                <button onClick={() => onRemove(todo.id)}>삭제</button>
+            </div>
+        </div>
     );
 }
 
