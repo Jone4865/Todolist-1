@@ -3,16 +3,22 @@
     display:flex; 
     height: 150px;
     align-items: center;
+    margin-left: 10px;
 }
 
 .todolist {
     height: 200px;
-    width: 1200px;
+    width: 90%;
     overflow: scroll;
     display: flex;
     white-space: nowrap;
+    align-items: center;
 }
 
 .donetext {
     text-align:center;
+}
+
+.all {
+    margin-left: 10%;
 }

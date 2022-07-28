@@ -1,15 +1,2 @@
 .list_item {
-    border: 5px solid #ffcc5c;
-    display:flex; 
-    height: 150px;
-    margin-left: 10px;
 }
-
-.todolist {
-    margin: auto;
-}
-
-.all {
-    margin: auto;
-}
-
