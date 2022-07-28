@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 
 import Header from "./header/Header";
 import Form from "./form/Form";
-import Todo from "./todo/Todo";
 import List from './list/List';
 
 function App() {
@@ -53,7 +52,13 @@ function App() {
     setTodos(todos.filter(todo => todo.id !== id));
   };
 
-  
+  const onToggle = (id) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, isDone: !todo.isDone } : todo
+      )
+    );
+  };
   return (
     <>
       <div className="App">
@@ -64,12 +69,10 @@ function App() {
           onChange={onChange}
           onCreate={onCreate}
         />
-        <Todo 
-          todos={todos}
-          onRemove={onRemove}/>
         <List 
           todos={todos} 
-          onRemove={onRemove} />
+          onRemove={onRemove} 
+          onToggle={onToggle}/>
       </div>
     </>
   );
