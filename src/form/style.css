@@ -1,0 +1,25 @@
+.myform {
+    display: flex;
+    height: 30px;
+    width: auto;
+    max-width: 600px;
+    margin: 10px auto 10px auto;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: beige;
+    
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    margin: auto;
+}
+
+.todo {
+    margin: auto;
+}
+
+.onbtn {
+    margin: auto;
+}

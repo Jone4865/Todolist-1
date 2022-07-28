@@ -1,0 +1,18 @@
+.list_item {
+    border: 5px solid #ffcc5c;
+    display:flex; 
+    height: 150px;
+    align-items: center;
+}
+
+.todolist {
+    height: 200px;
+    width: 1200px;
+    overflow: scroll;
+    display: flex;
+    white-space: nowrap;
+}
+
+.donetext {
+    text-align:center;
+}
